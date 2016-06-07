@@ -1,1 +1,2 @@
 http://www.gutenberg.us/articles/otsu's_method (otsu)
+http://www.ee.lamar.edu/gleb/dip/10-3%20-%20Morphological%20Image%20Processing.pdf (bottomhat)

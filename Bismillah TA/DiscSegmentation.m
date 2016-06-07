@@ -1,8 +1,14 @@
 function [disk , index, area] = DiscSegmentation(I)
     red = I(:,:,1);
     pre = Preprocessing(red,'disk');
-    level = HistogramSmoothing(pre,'disk');
-    iBw = im2bw(pre,level);
+    level = pre(:);
+    level(level == 0) = max(level);
+    mini = min(level);
+    level = pre(:);
+    level(level == 0) = NaN;
+    rerata = nanmean(level);
+    rerata = (mini + rerata)/2;
+    iBw = pre>(mini + rerata)/2;
     
     iBw = imerode(iBw,strel('disk',50));
     stats = regionprops(iBw,'basic');

@@ -4,7 +4,7 @@ function y = BloodVessel(greenChan,disk)
     greenChan = imerode(greenChan,strel('disk',5));
     greenChan = imdilate(greenChan,strel('disk',3));
     
-    gr = imbothat(greenChan,strel('diamond',20));
+    gr = BottomHat(greenChan,strel('diamond',20));
     level = 2.7*std(std(double(gr)))/255;
     y = im2bw(gr,level);
     y = imopen(y,strel('diamond',5));

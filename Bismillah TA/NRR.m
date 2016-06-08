@@ -2,8 +2,7 @@ function [imNrr,y] = NRR(imCup,imDisk)
     mask = imread('mask.png');
     mask = im2bw(mask);
     imNrr = logical(imDisk .* (1-imCup));
-    [h,w] = size(imNrr);
-    
+    [h,w] = size(imNrr);  
     mask1 = imresize(mask,[h w]);
     temporal = sum(sum(imNrr.*mask1));
     mask = imrotate(mask,90);

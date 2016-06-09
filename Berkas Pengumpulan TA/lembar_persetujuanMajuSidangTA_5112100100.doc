@@ -1,0 +1,50 @@
+<html
+          xmlns:o='urn:schemas-microsoft-com:office:office'
+          xmlns:w='urn:schemas-microsoft-com:office:word'
+          xmlns:v='urn:schemas-microsoft-com:vml'
+          xmlns='http://www.w3.org/TR/REC-html40'>
+          <head><title>Cetak Cover Proposal</title>
+              <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+              <[if gte mso 9]>
+                 <xml>
+                     <w:WordDocument>
+                     <w:View>Print</w:View>
+                     <w:Zoom>100</w:Zoom>
+                     <w:DoNotOptimizeForBrowser/>
+                     </w:WordDocument>
+                 </xml>
+             <![endif]>
+             <style>
+                 < /* Style Definitions */
+                     @page Section1
+                     {size:8.27in 11.69in;
+                     margin:1.18in 1.0in 1.0in 1.0in ;
+                     mso-header-margin:.5in;
+                     mso-footer-margin:.5in; mso-paper-source:0;}
+                     div.Section1
+                     {page:Section1;}
+                 >
+             </style>
+          </head>
+          <body>
+          <div class=Section1>
+          <table align='left' border='0' style='width:600px;'>
+          <tr align='center'><td colspan='2'><font size='6'>Lembar Persetujuan</font></td></tr>
+          <tr align='center'><td colspan='2'><font size='6'>Maju Sidang Tugas Akhir</font></td></tr>
+          <tr align='center' style='height:70px;'><td>&nbsp;</td></tr>
+          <tr align='center'><td colspan='2'><font size='6'>Deteksi Penyakit Glaukoma pada Citra Fundus Retina Mata Menggunakan Adaptive Thresholding dan Support Vector Machine</size></td></tr>
+          <tr align='center'><td colspan='2'><font size='5'>(2954)</size></td></tr>
+          <tr align='center' style='height:70px;'><td>&nbsp;</td></tr>
+          <tr align='center'><td colspan='2'><font size='4'>AHMAD MUSTOFA</font></td></tr>
+          <tr align='center'><td colspan='2'><font size='3'>5112100100</font></td></tr>
+          <tr align='center' style='height:70px;'><td>&nbsp;</td></tr>
+          <tr align='center'><td colspan='2'><font size='4'>Surabaya, .......................................</font></td></tr>
+          <tr align='center' style='height:70px;'><td>&nbsp;</td></tr>
+          <tr align='center'><td colspan='2'><font size='5'>Menyetujui,</font></td></tr>
+          <tr align='center'><td style='width:50%'><font size='5'>Dosen Pembimbing 1</font></td><td><font size='5'>Dosen Pembimbing 2</font></td></tr>
+          <tr><td>&nbsp;<br/><br/><br/><br/><br/></td></tr>
+          <tr align='center'><td><font size='4'>Prof. Ir. HANDAYANI TJANDRASA, M.Sc., Ph.D.</font></td><td><font size='4'>BILQIS AMALIAH, S.Kom., M.Kom.</font></td></tr>
+          <tr align='center'><td><font size='3'>NIP. 194908231976032001</font></td><td><font size='3'>NIP. 197509142001122002</font></td></tr>
+          </table>
+          </body>
+          </html>

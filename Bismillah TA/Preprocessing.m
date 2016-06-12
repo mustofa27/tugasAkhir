@@ -21,9 +21,9 @@ function y = Preprocessing(x,tipe)
         iter = 7;
     end
     y = uint8(y);
-    x = y;
-    x(x==0) = max(max(y));
     for i = 1 : iter
+        x = y;
+        x(x==0) = max(max(y));
         y = uint8(y - min(min(x)));
     end
 end

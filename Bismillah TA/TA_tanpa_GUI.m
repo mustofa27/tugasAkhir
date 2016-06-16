@@ -7,6 +7,9 @@ if (user_canceled == 0)
     CupToDiskRatio = sqrt(cupArea/diskArea);
     bloodISNT = ISNTBlood(blood);
     [imNrr,nrrISNT] = NRR(cup,disk);
+    newData = csvread('newdataTA_120.csv');
+    newDataset = [newData(:,1) newData(:,2) newData(:,3)];
+    newGroup = newData(:,4);
     svmModel = svmtrain(newDataset, newGroup, ...
                  'Autoscale',true, 'Showplot',false, 'Method','SMO', ...
                  'BoxConstraint',2e-1, 'Kernel_Function','linear');

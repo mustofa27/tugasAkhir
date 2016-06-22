@@ -131,7 +131,7 @@ bloodISNT = ISNTBlood(blood);
 [imNrr,nrrISNT] = NRR(cup,disk);
 axes(handles.axes1);
 imshow(imNrr);
-newData = csvread('newdataTA_120.csv');
+newData = csvread('newdataTA_Train.csv');
 newDataset = [newData(:,1) newData(:,2) newData(:,3)];
 newGroup = newData(:,4);
 svmModel = svmtrain(newDataset, newGroup, ...

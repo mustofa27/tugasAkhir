@@ -4,10 +4,21 @@ if (user_canceled == 0)
     [disk,index,diskArea] = DiscSegmentation(I);
     blood = BloodVessel(I(:,:,2),disk);
     [cup,cupArea,green] = SegmenCup(I);
+    %cropping
+    [row,col]=find(disk);
+    row_t = min(row);
+    col_t = min(col);
+    %%%%%%%%%%%%%
+    disk = imcrop(disk,[col_t row_t max(col)-col_t max(row)-row_t]);
+    %%%%%%%%%%%%%
+    cup = imcrop(cup,[col_t row_t max(col)-col_t max(row)-row_t]);
+    %%%%%%%%%%%%%
+    blood = imcrop(blood,[col_t row_t max(col)-col_t max(row)-row_t]);
+    %%%%%%%%%%%%%
     CupToDiskRatio = sqrt(cupArea/diskArea);
     bloodISNT = ISNTBlood(blood);
     [imNrr,nrrISNT] = NRR(cup,disk);
-    newData = csvread('newdataTA_120.csv');
+    newData = csvread('newdataTA_Train.csv');
     newDataset = [newData(:,1) newData(:,2) newData(:,3)];
     newGroup = newData(:,4);
     svmModel = svmtrain(newDataset, newGroup, ...

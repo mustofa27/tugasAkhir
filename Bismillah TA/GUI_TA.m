@@ -117,11 +117,11 @@ blood = imcrop(blood,[col_t row_t max(col)-col_t max(row)-row_t]);
 axes(handles.axes2);
 imshow(blood);
 axes(handles.axes3);
-imshow(preprocessedDisk);
+imshow(255-preprocessedDisk);
 axes(handles.axes4);
 imshow(disk);
 axes(handles.axes5);
-imshow(preprocessedCup);
+imshow(255-preprocessedCup);
 axes(handles.axes6);
 imshow(cup);
 
@@ -135,8 +135,8 @@ newData = csvread('newdataTA_Train.csv');
 newDataset = [newData(:,1) newData(:,2) newData(:,3)];
 newGroup = newData(:,4);
 svmModel = svmtrain(newDataset, newGroup, ...
-                 'Autoscale',true, 'Showplot',false, 'Method','SMO', ...
-                 'BoxConstraint',2e-1, 'Kernel_Function','linear');
+                 'Autoscale',true, 'Showplot',false, 'Method','LS', ...
+                 'BoxConstraint',2e-1, 'Kernel_Function','rbf','rbf_sigma',0.2);
 pred = svmclassify(svmModel, [CupToDiskRatio nrrISNT bloodISNT], 'Showplot',false);
 if pred == 1
     set(handles.edit3,'string','Glaukoma');

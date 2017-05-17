@@ -1,0 +1,1 @@
+Sistem untuk Deteksi Penyakit Glaukoma pada Citra Fundus Retina Mata Menggunakan Adaptive Thresholding dan Support Vector Machine dibangun menggunakan aplikasi Matlab dengan akurasi sebesar 80%.
